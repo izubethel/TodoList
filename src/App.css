@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    background: radial-gradient(to right bottom, #7777, #8888);
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-wrapper{
+    margin-top: 20px;
+    background-color: rgb(36, 35, 34);
+    min-width: 400px;
+    min-height: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1{
+    color: white;
+    text-align: center;
+    margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-input{
+    outline: none;
+    width: 200px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: gray;
+    color: black;
+    border: 1px solid gray;
+    margin-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.button-add{
+    width: 70px;
+    margin-left: 20px;
+    padding: 15px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-item{
+    display: flex;
+    margin: 20px 0;
+    border:1px solid white;
+    border-radius: 10px;
+    max-height: 45px;
+    padding: 10px;
+    
+}
+
+.button-complete,
+.button-edit,
+.button-delete {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.button-complete{
+    color: green;
+    margin-right: 10px;
+}
+.button-edit{
+    color: purple;
+    margin-right: 10px;
+}
+.button-delete{
+    color: red;
+    margin-right: 10px;
+}
+
+.complete{
+    text-decoration-style: solid;
+    text-decoration-color: white;
+    text-decoration-line: line-through;
+}
+
+.list{
+    width: 200px;
+    background-color: gray;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 15px;
+}
+
+input:focus,
+button:focus{
+    outline: none;
 }
